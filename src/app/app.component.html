@@ -27,7 +27,7 @@
       <div class="title">Summary</div>
       <div class="summary__list">
         <div class="summary__item" *ngFor="let item of summary; let i = index">
-          <div class="summary__icon"><img [src]="'/assets/summary-' + (i+1) + '.png'" alt="icon"></div>
+          <div class="summary__icon"><img [src]="'./assets/summary-' + (i+1) + '.png'" alt="icon"></div>
           <div class="summary__text">{{item}}</div>
         </div>
       </div>
@@ -35,7 +35,7 @@
     <div class="experience">
       <div class="title">Experience</div>
       <div class="experience__list">
-        <div class="experience__item" *ngFor="let item of experience; let i = index" [style.background-image]="'url(../assets/experience-' + (i+1) + '.png)'">
+        <div class="experience__item" *ngFor="let item of experience; let i = index" [style.background-image]="'url(./assets/experience-' + (i+1) + '.png)'">
           <div class="experience__info">
             <div class="experience__duration">{{item.info.duration}}</div>
             <div class="experience__type">{{item.info.type}}</div>
